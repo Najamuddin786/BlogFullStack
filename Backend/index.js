@@ -4,7 +4,7 @@ import userRouter from "./src/routes/user.js";
 import noteRouter from "./src/routes/note.js";
 
 const app=express()
-const port=3000;
+const port=process.env.PORT || 4000;
 
 app.use(express.json())
 
